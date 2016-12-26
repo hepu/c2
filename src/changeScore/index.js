@@ -90,6 +90,8 @@ export default class ChangeScore extends Component {
               onSubmitEditing={this.submitChanges}
               autoFocus={true}
               returnKeyType='done'
+              autoCorrect={false}
+              keyboardType='numeric'
             />
           </Card.Body>
           <Card.Actions position="right">
