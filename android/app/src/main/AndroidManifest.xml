@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.c2"
+    package="com.hansgamarra.c2"
     android:versionCode="1"
     android:versionName="1.0">
 
@@ -26,6 +26,9 @@
         </intent-filter>
       </activity>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="3ae77332a37bb7771a9c34a94bf8dac923a56dfe" />
     </application>
 
 </manifest>

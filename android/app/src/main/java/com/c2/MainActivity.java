@@ -1,6 +1,11 @@
-package com.c2;
+package com.hansgamarra.c2;
+
+import android.os.Bundle;
 
 import com.facebook.react.ReactActivity;
+
+import com.crashlytics.android.Crashlytics;
+import io.fabric.sdk.android.Fabric;
 
 public class MainActivity extends ReactActivity {
 
@@ -11,5 +16,12 @@ public class MainActivity extends ReactActivity {
     @Override
     protected String getMainComponentName() {
         return "C2";
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
+//        setContentView(R.layout.activity_sample);
     }
 }

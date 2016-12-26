@@ -1,8 +1,9 @@
-package com.c2;
+package com.hansgamarra.c2;
+
 
 import android.app.Application;
 import android.util.Log;
-
+import com.crashlytics.android.Crashlytics;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
